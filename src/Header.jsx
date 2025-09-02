@@ -44,7 +44,7 @@ export default function Header() {
                 <div id="bar-nav-3"></div>
             </div>
         </button>
-        <h1><a href="#"><img src="/images/icone.png" /> Loric Ipsum</a></h1>
+        <h1><a href="#"><img src="/images/icone.png" /> Loric Audin</a></h1>
         <div>
             <nav className={menuOuvert ? "nav-ouvert" : ""}>
                 <ul>
