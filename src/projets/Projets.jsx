@@ -24,6 +24,20 @@ export default function Projets() {
                         listeTechnologies={["Python", "C", "Kotlin"]}
                     />
                     <Projet
+                        nomProjet={"Portfolio (site actuel)"}
+                        anneeCreation={2025}
+                        description={`
+                            Il s'agit du site que vous visitez actuellement.
+                            La première version datant de 2024 (qui avait été réalisée en HTML, CSS et JavaScript) a été refaite (en ReactJS) pour ajouter plus de styles
+                            et faciliter sa modification pour l'ajout de nouveaux projets, de compétences, de technologies...
+                            Le portfolio est l'équivalent d'un CV et permet d'en savoir plus sur moi et mon parcours.
+                        `}
+                        lienTelechargement={""}
+                        lienCodeSource={"https://github.com/loricaudin/loric-audin-portfolio"}
+                        listeImages={["portfolio-01", "portfolio-02"]}
+                        listeTechnologies={["ReactJS", "SCSS"]}
+                    />
+                    <Projet
                         nomProjet={"Loric Informatique"}
                         anneeCreation={2024}
                         description={`

@@ -16,42 +16,49 @@ export default function Technologies() {
                             texte={"Python"}
                             type={"application"}
                             icone={"py"}
+                            maitrise={90}
                             couleur={"rgb(255, 226, 36)"}
                         />
                         <Technologie
                             nom={"C"}
                             type={"application"}
                             icone={"c"}
+                            maitrise={55}
                             couleur={"rgb(0, 89, 157)"}
                         />
                         <Technologie
                             nom={"C++"}
                             type={"application"}
                             icone={"cpp"}
+                            maitrise={40}
                             couleur={"rgb(0, 89, 157)"}
                         />
                         <Technologie
                             nom={"C# (Marque déposée par Microsoft)"}
                             texte={"C#"}
                             type={"application"}
+                            maitrise={20}
                             couleur={"rgb(129, 48, 132)"}
                         />
                         <Technologie
                             nom={"Java"}
                             type={"application"}
                             icone={"java"}
+                            maitrise={60}
                             couleur={"rgb(249, 183, 60)"}
                         />
                         <Technologie
                             nom={"Microsoft Visual Basic (Marque déposée)"}
                             texte={"Visual Basic"}
                             type={"application"}
+                            maitrise={70}
                             couleur={""}
                         />
                         <Technologie
                             nom={"Android Java et Kotlin (Marques déposées)"}
                             texte={"Android Java et Kotlin"}
                             type={"mobile"}
+                            maitrise={70}
                             couleur={"rgb(61, 220, 132)"}
                         />
                     </div>
@@ -63,30 +70,35 @@ export default function Technologies() {
                             nom={"HTML"}
                             type={"web"}
                             icone={"html"}
+                            maitrise={85}
                             couleur={"rgb(241, 101, 41)"}
                         />
                         <Technologie
                             nom={"CSS"}
                             type={"web"}
                             icone={"css"}
+                            maitrise={80}
                             couleur={"rgb(38, 77, 228)"}
                         />
                         <Technologie
                             nom={"JavaScript"}
                             type={"web"}
                             icone={"js"}
+                            maitrise={80}
                             couleur={"rgb(247, 223, 30)"}
                         />
                         <Technologie
                             nom={"TypeScript (Marque déposée par Microsoft)"}
                             texte={"TypeScript"}
                             type={"web"}
+                            maitrise={70}
                             couleur={"rgb(45, 121, 199)"}
                         />
                         <Technologie
                             nom={"PHP"}
                             type={"web"}
                             icone={"php"}
+                            maitrise={65}
                             couleur={"rgb(122, 134, 184)"}
                         />
                         <Technologie
@@ -94,6 +106,7 @@ export default function Technologies() {
                             texte={"Symfony"}
                             type={"web"}
                             icone={"symfony"}
+                            maitrise={40}
                             couleur={"rgb(255, 255, 255)"}
                         />
                         <Technologie
@@ -101,6 +114,7 @@ export default function Technologies() {
                             texte={"React"}
                             type={"web-front"}
                             icone={"react"}
+                            maitrise={80}
                             couleur={"rgb(155, 233, 255)"}
                         />
                         <Technologie
@@ -108,6 +122,7 @@ export default function Technologies() {
                             texte={"Vue"}
                             type={"web-front"}
                             icone={"vue"}
+                            maitrise={70}
                             couleur={"rgb(18, 184, 109)"}
                         />
                         <Technologie
@@ -115,6 +130,7 @@ export default function Technologies() {
                             texte={"Angular"}
                             type={"web-front"}
                             icone={"angular"}
+                            maitrise={70}
                             couleur={"rgb(255, 151, 174)"}
                         />
                         <Technologie
@@ -122,6 +138,7 @@ export default function Technologies() {
                             texte={"Spring"}
                             icone={"spring"}
                             type={"web-back"}
+                            maitrise={50}
                             couleur={"rgb(152, 225, 93)"}
                         />
                         <Technologie
@@ -129,6 +146,7 @@ export default function Technologies() {
                             texte={"Spring Boot"}
                             icone={"springboot"}
                             type={"web-back"}
+                            maitrise={50}
                             couleur={"rgb(152, 225, 93)"}
                         />
                         <Technologie
@@ -136,6 +154,7 @@ export default function Technologies() {
                             texte={"Django"}
                             type={"web-back"}
                             icone={"django"}
+                            maitrise={75}
                             couleur={"rgb(18, 94, 65)"}
                         />
                         <Technologie
@@ -143,24 +162,28 @@ export default function Technologies() {
                             texte={"FastAPI"}
                             type={"web-back"}
                             icone={"fastapi"}
+                            maitrise={60}
                             couleur={"rgb(15, 181, 167)"}
                         />
                         <Technologie
                             nom={"Express"}
                             type={"web-back"}
                             icone={"express"}
+                            maitrise={40}
                             couleur={"rgb(240, 241, 243)"}
                         />
                         <Technologie
                             nom={"Node JS"}
                             type={"web"}
                             icone={"nodejs"}
+                            maitrise={60}
                             couleur={"rgb(175, 247, 186)"}
                         />
                         <Technologie
                             nom={"Nest JS"}
                             type={"web-back"}
                             icone={"nestjs"}
+                            maitrise={50}
                             couleur={"rgb(248, 133, 160)"}
                         />
                         <Technologie
@@ -168,6 +191,7 @@ export default function Technologies() {
                             texte={"Next JS"}
                             type={"web-front"}
                             icone={"nextjs"}
+                            maitrise={50}
                             couleur={"rgb(50, 50, 50)"}
                         />
                         <Technologie
@@ -175,6 +199,7 @@ export default function Technologies() {
                             texte={"ThreeJS"}
                             type={"web-front"}
                             icone={"threejs"}
+                            maitrise={60}
                             couleur={"rgb(255, 255, 255)"}
                         />
                         <Technologie
@@ -182,6 +207,7 @@ export default function Technologies() {
                             texte={"Tailwind CSS"}
                             type={"web-front"}
                             icone={"tailwindcss"}
+                            maitrise={50}
                             couleur={"rgb(97, 227, 249)"}
                         />
                         <Technologie
@@ -189,6 +215,7 @@ export default function Technologies() {
                             texte={"SCSS"}
                             type={"web-front"}
                             icone={"scss"}
+                            maitrise={60}
                             couleur={"rgb(244, 153, 197)"}
                         />
                     </div>
@@ -200,6 +227,7 @@ export default function Technologies() {
                             nom={"MySQL"}
                             type={"baseDeDonnees"}
                             icone={"mysql"}
+                            maitrise={90}
                             couleur={"rgb(253, 183, 70)"}
                         />
                         <Technologie
@@ -207,36 +235,42 @@ export default function Technologies() {
                             texte={"PostgreSQL"}
                             type={"baseDeDonnees"}
                             icone={"postgresql"}
+                            maitrise={70}
                             couleur={"rgb(87, 129, 164)"}
                         />
                         <Technologie
                             nom={"Oracle Database (Marque déposée par Oracle)"}
                             texte={"Oracle Database"}
                             type={"baseDeDonnees"}
+                            maitrise={90}
                             couleur={"rgb(255, 0, 0)"}
                         />
                         <Technologie
                             nom={"Microsoft SQL Server (Marque déposée par Microsoft)"}
                             texte={"Microsoft SQL Server"}
                             type={"baseDeDonnees"}
+                            maitrise={80}
                             couleur={"rgb(255, 44, 44)"}
                         />
                         <Technologie
                             nom={"SQLite"}
                             type={"baseDeDonnees"}
                             icone={"sqlite"}
+                            maitrise={70}
                             couleur={"rgb(55, 181, 237)"}
                         />
                         <Technologie
                             nom={"MongoDB (Marque déposée)"}
                             texte={"MongoDB"}
                             type={"baseDeDonnees"}
+                            maitrise={70}
                             couleur={"rgb(108, 172, 72)"}
                         />
                         <Technologie
                             nom={"Neo4j (Marque déposée)"}
                             texte={"Neo4j"}
                             type={"baseDeDonnees"}
+                            maitrise={60}
                             couleur={"rgb(1, 139, 255)"}
                         />
                         <Technologie
@@ -244,6 +278,7 @@ export default function Technologies() {
                             texte={"Prisma"}
                             type={"baseDeDonnees"}
                             icone={"prisma"}
+                            maitrise={30}
                             couleur={"rgb(72, 98, 113)"}
                         />
                     </div>
@@ -255,24 +290,28 @@ export default function Technologies() {
                             nom={"Docker"}
                             texte={"Docker"}
                             icone={"docker"}
+                            maitrise={60}
                             couleur={"rgb(66, 157, 255)"}
                         />
                         <Technologie
                             nom={"Git"}
                             texte={"Git"}
                             icone={"git"}
+                            maitrise={60}
                             couleur={"rgb(255, 116, 94)"}
                         />
                         <Technologie
                             nom={"WinCC (Marque déposée par Siemens)"}
                             texte={"WinCC"}
                             type={"application de supervision"}
+                            maitrise={90}
                             couleur={"#26bfc6"}
                         />
                         <Technologie
                             nom={"AVEVA Plant Scada et Cicode (Marque déposée par Schneider)"}
                             texte={"AVEVA Plant Scada"}
                             type={"application de supervision"}
+                            maitrise={80}
                             couleur={"#3b1952"}
                         />
                     </div>

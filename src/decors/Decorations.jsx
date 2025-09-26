@@ -23,7 +23,7 @@ export default function Decorations({}) {
             for (let i = 0; i < NB_CARRES_PAGE; i++) {
                 listeCarres.push({
                     "x": Math.floor(Math.random() * 100),
-                    "y": Math.floor(Math.random() * (document.documentElement.scrollHeight - 150)),
+                    "y": Math.floor(Math.random() * (document.documentElement.scrollHeight - 250)),
                     "taille": 50 + Math.floor(Math.random() * 200)
                 });
             }

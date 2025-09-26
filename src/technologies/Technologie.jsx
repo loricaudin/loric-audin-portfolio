@@ -1,6 +1,6 @@
 import './Technologie.scss'
 
-export default function Technologie({ nom, texte, type, icone, couleur }) {
+export default function Technologie({ nom, texte, type, icone, couleur, maitrise }) {
     const styleTexte = (couleur === "rgb(255, 255, 255)") ? { color: "#000000" } : {}
 
     return <div className="technologie" style={{ backgroundColor: couleur }} title={nom}>
@@ -20,6 +20,12 @@ export default function Technologie({ nom, texte, type, icone, couleur }) {
                     :
                     <p>Pas de technologie</p>
                 }
+            </div>
+        }
+        {(maitrise) &&
+            <div className="techno_maitrise">
+                Maîtrise :
+                
             </div>
         }
     </div>
