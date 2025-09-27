@@ -22,11 +22,11 @@ export default function Technologie({ nom, texte, type, icone, couleur, maitrise
                 }
             </div>
         }
-        {(maitrise) &&
-            {/* <div className="techno_maitrise">
+        {/* {(maitrise) &&
+            <div className="techno_maitrise">
                 Maîtrise :
                 
-            </div> */}
-        }
+            </div>
+        } */}
     </div>
 }
