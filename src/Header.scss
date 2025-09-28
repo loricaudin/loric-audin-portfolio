@@ -70,6 +70,8 @@ header {
     }
 
     h1 {
+        font-family: "Poppins SemiBold";
+        font-weight: normal;
         text-decoration: none;
         cursor: pointer;
         margin: 15px;
@@ -86,8 +88,8 @@ header {
 
         a {
             text-decoration: none;
-            font-weight: normal;
-            font-size: 30px;
+            font-weight: bold;
+            font-size: 24px;
             color: black;
             display: flex;
             flex-direction: row;

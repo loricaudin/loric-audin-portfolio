@@ -34,9 +34,14 @@ body {
 }
 
 @font-face {
+    font-family: "Poppins SemiBold";
+    src: url("../polices/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
     font-family: "Poppins";
     font-weight: bold;
-    src: url("/polices/Poppins/Poppins-Bold.ttf");
+    src: url("../polices/Poppins/Poppins-Bold.ttf");
 }
 
 @font-face {
@@ -62,9 +67,7 @@ a:hover {
 }
 
 .sombre a {
-    font-weight: 500;
     color: #646cff;
-    text-decoration: inherit;
 }
 
 .sombre a:hover {
