@@ -27,7 +27,7 @@ export default function Presentation() {
                     et ma grande curiosité m’a permis d’acquérir des nouveaux langages de programmation
                     et de découvrir davantage de fonctionnalités.
                     J’adore créer des sites web et des applications,
-                    que ce soit sur PC ou mobile, peut importe la technologie utilisée.
+                    que ce soit sur PC ou mobile, peu importe la technologie utilisée.
                 </p>
                 <img className="profil" src="/images/moi.jpg"/>
             </div>
