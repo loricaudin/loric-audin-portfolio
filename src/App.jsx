@@ -9,6 +9,7 @@ import Contact from './contact/Contact'
 import Decorations from './decors/Decorations'
 import Header from "./Header"
 import Footer from "./Footer"
+import { Suspense } from 'react';
 
 function App() {
 
@@ -35,4 +36,11 @@ function App() {
     )
 }
 
-export default App
+//export default App
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="Loric Ipsum">
+      <App />
+    </Suspense>
+  )
+}

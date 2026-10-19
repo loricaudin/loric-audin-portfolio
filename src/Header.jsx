@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import './Header.scss'
 import Popup from './Popup';
+import { useTranslation } from 'react-i18next';
 
 let demarrage = true;
 
 export default function Header() {
+    const { t, i18n } = useTranslation();
+
     const [menuOuvert, setMenuOuvert] = useState(false);
     const [popupOuverte, setPopupOuverte] = useState(false);
 
@@ -36,6 +39,10 @@ export default function Header() {
         setMenuOuvert(prev => !prev);
     };
 
+    const changerLangue = (lang) => {
+        i18n.changeLanguage(lang);;
+    };
+
     return <header className={menuOuvert ? "header-ouvert" : "header-ferme"}>
         <button id="bouton-menu-nav" onClick={ouvrirFermerMenuNav}>
             <div className={menuOuvert ? "ouvert" : ""}>
@@ -48,7 +55,7 @@ export default function Header() {
         <div>
             <nav className={menuOuvert ? "nav-ouvert" : ""}>
                 <ul>
-                    <li><a href="#presentation" onClick={ouvrirFermerMenuNav}>Présentation</a></li>
+                    <li><a href="#presentation" onClick={ouvrirFermerMenuNav}>{t('header.presentation')}</a></li>
                     <li><a href="#parcours" onClick={ouvrirFermerMenuNav}>Parcours</a></li>
                     <li><a href="#competences" onClick={ouvrirFermerMenuNav}>Compétences</a></li>
                     <li><a href="#technologies" onClick={ouvrirFermerMenuNav}>Technologies</a></li>
@@ -63,6 +70,13 @@ export default function Header() {
         </div>
         {(popupOuverte == true) &&
             <Popup titre="Paramètres du site" actionFermeture={function () { setPopupOuverte(!popupOuverte) }} >
+                <div>
+                    Langue :
+                    <select value={i18n.language} onChange={(e) => changerLangue(e.target.value)}>
+                        <option value={"en"}>English</option>
+                        <option value={"fr"}>Français</option>
+                    </select>
+                </div>
                 <div>
                     Mode d'affichage :
                     <button className="clair-affichage" onClick={basculerClairSombre}>Activer mode sombre</button>
