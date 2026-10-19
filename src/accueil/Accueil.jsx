@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import './Accueil.scss'
 
 export default function Accueil() {
+    const { t } = useTranslation();
     return <span>
         <section id="accueil">
-            <h1>Bienvenue sur mon portfolio !</h1>
-            <h2>C'est ici que tout commence !</h2>
-            <a href="#presentation"><button>C'est parti</button></a>
+            <h1>{t('main.titre')}</h1>
+            <h2>{t('main.sous_titre')}</h2>
+            <a href="#presentation"><button>{t('main.bouton_go')}</button></a>
             {/* <p></p>
             <div class="mode-affichage">
                 <h2>Comment voulez-vous visiter le portfolio ?</h2>

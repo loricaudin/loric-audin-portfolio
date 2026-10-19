@@ -1,5 +1,97 @@
 {
   "header": {
-    "presentation": "Présentation"
+    "presentation": "Présentation",
+    "parcours": "Parcours",
+    "competences": "Compétences",
+    "technologies": "Technologies",
+    "projets": "Projets",
+    "contact": "Contact",
+    "parametres": {
+        "titre": "Paramètres du site",
+        "langue": {
+            "titre": "Langue :"
+        },
+        "mode_affichage": {
+            "titre": "Mode d'affichage :",
+            "valeur_active": "Activer mode sombre",
+            "valeur_inactive": "Désactiver mode sombre"
+        },
+        "animations": {
+            "titre": "Animations lourdes :",
+            "valeur_active": "Activer les animations",
+            "valeur_inactive": "Désactiver les animations"
+        }
+    }
+  },
+
+  "chargement": {
+    "texte": "Le plus beau portfolio est en cours de chargement..."
+  },
+
+  "main": {
+    "titre": "Bienvenue sur mon portfolio !",
+    "sous_titre": "C'est ici que tout commence !",
+    "bouton_go": "C'est parti",
+
+    "presentation": {
+        "titre": "Qui suis-je ?",
+        "description": "Je m’appelle Loric Audin, j'ai {age} ans et je suis passionné d’informatique depuis tout jeune. Ce que j’aime tant dans l’informatique, c’est la programmation. Depuis le collège, j’adorais faire des petits programmes. J’ai commencé par faire du Scratch, et ma grande curiosité m’a permis d’acquérir des nouveaux langages de programmation et de découvrir davantage de fonctionnalités. J’adore créer des sites web et des applications, que ce soit sur PC ou mobile, peu importe la technologie utilisée."
+    },
+    "parcours": {
+        "titre": "Mon parcours",
+        "academique": {
+            "titre": "Parcours académique",
+            "1": {
+                "titre": "Lycée Édouard Branly",
+                "sous_titre": "Lycée Générale",
+                "description": "Spécialités Mathématiques, Numérique et Sciences Informatiques et Physique-Chimie",
+                "emplacement": "Lyon 5ème arrondissement"
+            },
+            "2": {
+                "titre": "IUT Lyon 1",
+                "sous_titre": "BUT Informatique",
+                "description": "Parcours RA (Réalisation d'Applications)",
+                "emplacement": "Lyon Villeurbanne"
+            },
+            "3": {
+                "titre": "CESI Lyon",
+                "sous_titre": "École d'ingénieur",
+                "description": "",
+                "emplacement": "Lyon Villeurbanne"
+            }
+        },
+        "professionnel": {
+            "titre": "Parcours professionnel",
+            "1": {
+                "titre": "KPI Technologie",
+                "sous_titre": "Stage de 12 semaines + Alternance d'1 an",
+                "description": "Développement de projets informatiques pour des sociétés industrielles",
+                "emplacement": "Lyon 9ème arrondissement"
+            },
+            "2": {
+                "titre": "Hoortrade",
+                "sous_titre": "Alternance de 3 ans",
+                "description": "Développeur Full Stack - Orientation Backend",
+                "emplacement": "Lyon 7ème arrondissement"
+            }
+        }
+    },
+    "competences": {
+        "titre": ""
+    },
+    "technologies": {
+        "titre": ""
+    },
+    "projets": {
+        "titre": ""
+    },
+    "contact": {
+        "titre": ""
+    }
+  },
+
+
+  "footer": {
+    "content": "©2024-2026 Loric Audin : Portfolio"
   }
 }

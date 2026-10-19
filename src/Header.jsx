@@ -3,7 +3,7 @@ import './Header.scss'
 import Popup from './Popup';
 import { useTranslation } from 'react-i18next';
 
-let demarrage = true;
+// let demarrage = true;
 
 export default function Header() {
     const { t, i18n } = useTranslation();
@@ -56,11 +56,11 @@ export default function Header() {
             <nav className={menuOuvert ? "nav-ouvert" : ""}>
                 <ul>
                     <li><a href="#presentation" onClick={ouvrirFermerMenuNav}>{t('header.presentation')}</a></li>
-                    <li><a href="#parcours" onClick={ouvrirFermerMenuNav}>Parcours</a></li>
-                    <li><a href="#competences" onClick={ouvrirFermerMenuNav}>Compétences</a></li>
-                    <li><a href="#technologies" onClick={ouvrirFermerMenuNav}>Technologies</a></li>
-                    <li><a href="#projets" onClick={ouvrirFermerMenuNav}>Projets</a></li>
-                    <li><a href="#contact" onClick={ouvrirFermerMenuNav}>Contact</a></li>
+                    <li><a href="#parcours" onClick={ouvrirFermerMenuNav}>{t('header.parcours')}</a></li>
+                    <li><a href="#competences" onClick={ouvrirFermerMenuNav}>{t('header.competences')}</a></li>
+                    <li><a href="#technologies" onClick={ouvrirFermerMenuNav}>{t('header.technologies')}</a></li>
+                    <li><a href="#projets" onClick={ouvrirFermerMenuNav}>{t('header.projets')}</a></li>
+                    <li><a href="#contact" onClick={ouvrirFermerMenuNav}>{t('header.contact')}</a></li>
                 </ul>
             </nav>
             <button className="bouton-parametres" onClick={function () { setPopupOuverte(!popupOuverte) }}>
@@ -69,23 +69,23 @@ export default function Header() {
             </button>
         </div>
         {(popupOuverte == true) &&
-            <Popup titre="Paramètres du site" actionFermeture={function () { setPopupOuverte(!popupOuverte) }} >
+            <Popup titre={t('header.parametres.titre')} actionFermeture={function () { setPopupOuverte(!popupOuverte) }} >
                 <div>
-                    Langue :
+                    {t('header.parametres.langue.titre')}
                     <select value={i18n.language} onChange={(e) => changerLangue(e.target.value)}>
                         <option value={"en"}>English</option>
                         <option value={"fr"}>Français</option>
                     </select>
                 </div>
                 <div>
-                    Mode d'affichage :
-                    <button className="clair-affichage" onClick={basculerClairSombre}>Activer mode sombre</button>
-                    <button className="sombre-affichage" onClick={basculerClairSombre}>Désactiver mode sombre</button>
+                    {t('header.parametres.mode_affichage.titre')}
+                    <button className="clair-affichage" onClick={basculerClairSombre}>{t('header.parametres.mode_affichage.valeur_active')}</button>
+                    <button className="sombre-affichage" onClick={basculerClairSombre}>{t('header.parametres.mode_affichage.valeur_inactive')}</button>
                 </div>
                 <div>
-                    Animations lourdes :
-                    <button className="animations-desactives" onClick={basculerAnimations}>Activer les animations</button>
-                    <button className="animations-actives" onClick={basculerAnimations}>Désactiver les animations</button>
+                    {t('header.parametres.animations.titre')}
+                    <button className="animations-desactives" onClick={basculerAnimations}>{t('header.parametres.animations.valeur_active')}</button>
+                    <button className="animations-actives" onClick={basculerAnimations}>{t('header.parametres.animations.valeur_inactive')}</button>
                 </div>
             </Popup>
         }

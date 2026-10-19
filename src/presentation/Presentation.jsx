@@ -1,5 +1,6 @@
 import Section from '../Section';
 import './Presentation.scss'
+import { useTranslation } from 'react-i18next';
 
 function calculerAge(dateAnniversaire) {
     const aujourdhui = new Date();
@@ -13,21 +14,17 @@ function calculerAge(dateAnniversaire) {
 }
 
 export default function Presentation() {
+    const { t } = useTranslation();
     const age = calculerAge(new Date('2004-05-27'));
+
+    const description = t('main.presentation.description').replace('{age}', age);
     return <>
         <a className="lien-section" id="presentation"></a>
         <Section classe="presentation">
-            <h1>Qui suis-je ?</h1>
+            <h1>{t('main.presentation.titre')}</h1>
             <div>
                 <p>
-                    Je m’appelle Loric Audin, j'ai {age} ans et je suis passionné d’informatique depuis tout jeune.
-                    Ce que j’aime tant dans l’informatique, c’est la programmation.
-                    Depuis le collège, j’adorais faire des petits programmes.
-                    J’ai commencé par faire du Scratch,
-                    et ma grande curiosité m’a permis d’acquérir des nouveaux langages de programmation
-                    et de découvrir davantage de fonctionnalités.
-                    J’adore créer des sites web et des applications,
-                    que ce soit sur PC ou mobile, peu importe la technologie utilisée.
+                    {description}
                 </p>
                 <img className="profil" src="/images/moi.jpg"/>
             </div>

@@ -10,36 +10,38 @@ import Decorations from './decors/Decorations'
 import Header from "./Header"
 import Footer from "./Footer"
 import { Suspense } from 'react';
+import { useTranslation } from 'react-i18next'
 
 function App() {
 
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches == true) {
-        document.body.className = "sombre anime";
-    }
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches == true) {
+    document.body.className = "sombre anime";
+  }
 
-    return (
-        <>
-            <Header />
-            <main>
-                <Accueil />
-                <Presentation />
-                <Parcours />
-                <Competences />
-                <Technologies />
-                <Projets />
-                <Contact />
-            </main>
-            <Footer />
+  return (
+    <>
+      <Header />
+      <main>
+        <Accueil />
+        <Presentation />
+        <Parcours />
+        <Competences />
+        <Technologies />
+        <Projets />
+        <Contact />
+      </main>
+      <Footer />
 
-            <Decorations />
-        </>
-    )
+      <Decorations />
+    </>
+  )
 }
 
 //export default App
 export default function WrappedApp() {
+  const { t } = useTranslation();
   return (
-    <Suspense fallback="Loric Ipsum">
+    <Suspense fallback={t('chargement.texte')}>
       <App />
     </Suspense>
   )
